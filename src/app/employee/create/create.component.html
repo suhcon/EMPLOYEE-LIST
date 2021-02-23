@@ -1,0 +1,176 @@
+
+<div class="container mat-elevation-z8">
+ 
+    <div class="col-lg-12">
+        <div class="row mt-2">
+            <h2> Create Employee</h2>
+            <hr>
+
+            <form [formGroup]="userForm">
+            <h3> Personal Details</h3>
+            <hr>
+
+                <div class="clearfix row mb-4">
+                    <div class="col-lg-4 mt-2">
+                        <div>Salutation</div>
+                        <!-- <ng-select class="labelborder" [items]="salutation" bindLabel="name" bindValue="id" ></ng-select>                      -->
+                        <select class="labelborder"  name="salutation" formControlName="salutation">
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>   
+                            <option value="Mdm">Mdm</option>                      
+                        </select>
+                    </div>
+                    <div class="col-lg-4 mt-2">
+                        <div>Identiication Number</div>
+                        <input class="labelborder" formControlName="priority" type="text" name="idno" />
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col-lg-4 ">
+                        <div>First Name</div>
+                        <input class="labelborder"  formControlName="fname" type="text" name="fname" />
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div>Middle Name</div>
+                        <input  class="labelborder" formControlName="mname" type="text" name="mname" />                 
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-lg-4 ">
+                        <div>Last Name</div>
+                        <input class="labelborder"  formControlName="lname" type="text" name="lname" />
+                    </div>                   
+                </div>
+                <div class="row mt-2">
+                    <div class="col-lg-4 ">
+                        <div>Gender</div>
+                        <select class="labelborder"  name="gender" formControlName="gender">
+                            <option value="Mae">Male</option>
+                            <option value="Female">Female</option>                       
+                        </select>
+                        <!-- <input formControlName="gender" type="text" name="gender" /> -->
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div>Marital Status</div>
+                        <select class="labelborder"  name="mstatus" formControlName="mstatus">
+                            <option value="Mae">Single</option>
+                            <option value="Female">Married</option>                       
+                        </select>
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div>Date of Birth</div>
+                        <input class="labelborder" formControlName="dob" type="text" name="dob" />                                 
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col-lg-4 ">
+                        <div>Office Mail</div>
+                        <input  class="labelborder" formControlName="offmail" type="text" name="offmail" />
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div>Personal Mail</div>
+                        <input formControlName="pmail" type="text" name="pmail" />                 
+                    </div>
+                    <div class="col-lg-4">
+                        <div>Nationality</div>
+                        <input  class="labelborder" formControlName="nationality" type="text" name="nationality" />                 
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-lg-12 ">
+                        <div>Remarks</div>
+                        <div class="textwrapper"><textarea formControlName="remarks" name="remarks"></textarea></div>
+                    </div>           
+                </div>
+
+
+                <!--Carrer Details start-->
+
+                <h3> Career Details</h3>
+                <hr>
+    
+                    <div class="clearfix row mb-4">
+                        <div class="col-lg-4 mt-2">
+                            <div>Cost Center</div>
+                            <input  formControlName="costcenter" type="text" name="costcenter" />
+                           
+                        </div>
+                        <div class="col-lg-4 mt-2">
+                            <div>Department</div>
+                            <input class="labelborder" formControlName="department" type="text" name="department" />
+                        </div>
+                        <div class="col-lg-4 mt-2">
+                            <div>Employement Category</div>
+                            <input class="labelborder" formControlName="empcat" type="text" name="empcat" />
+                        </div>
+                    </div>
+    
+                    <div class="row mt-2">
+                        <div class="col-lg-4 ">
+                            <div>Employement Number</div>
+                            <input class="labelborder"  formControlName="fname" type="text" name="fname" />
+                        </div>
+                        <div class="col-lg-4 ">
+                            <div>Hired Date</div>
+                            <input  class="labelborder" formControlName="hdte" type="text" name="hdte" />                 
+                        </div>
+                        <div class="col-lg-4 ">
+                            <div>Business Unit</div>
+                            <input  class="labelborder" formControlName="bu" type="text" name="bu" />                 
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-lg-4 ">
+                            <div>Working Hours</div>
+                            <input class="labelborder"  formControlName="whrs" type="text" name="whrs" />
+                        </div>    
+                        <div class="col-lg-4 ">
+                            <div>Basic Salary</div>
+                            <input class="labelborder"  formControlName="bsal" type="text" name="bsal" />
+                        </div>    
+                        <div class="col-lg-4 ">
+                            <div>Basic Salary Effective Date</div>
+                            <input class="labelborder"  formControlName="bsdate" type="text" name="bsdate" />
+                        </div>                   
+                    </div>              
+    
+                    <div class="row mt-2">
+                        <div class="col-lg-4 ">
+                            <div>Location</div>
+                            <input  class="labelborder" formControlName="offmail" type="text" name="offmail" />
+                        </div>
+                        <div class="col-lg-4 ">
+                            <div>Employement Status</div>
+                            <input class="labelborder" sformControlName="estatus" type="text" name="estatus" />                 
+                        </div>
+                        <div class="col-lg-4">
+                            <div>Person Number</div>
+                            <input  class="labelborder" formControlName="pnbr" type="text" name="pnbr" />                 
+                        </div>
+                    </div>              
+    
+
+
+
+                <!--Carrer Details end-->
+                <div class="row mt-2 mb-4">
+                    <div class="col-lg-2">
+                      <button class="btn btn-md btn-primary f-right f-header-6" type="submit"
+                     id="addButon">Add Employee</button>                  
+      
+                    </div>
+                    <div class="col-lg-2">
+                        <button class="btn btn-md  f-right f-header-6" type="submit"
+                       id="cancelButon">Cancel</button>                  
+        
+                      </div>
+                </div>
+                
+            </form>
+
+        </div>
+    </div>
+
+</div>
